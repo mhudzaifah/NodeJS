@@ -15,6 +15,39 @@ router.get('/', (req, res) =>{
 
 });
 
+router.get('/product1', (req, res) =>{
+    res.send({
+        name: 'smartphone',
+        type: 'android',
+        brand: 'samsung',
+        price: '5000000',
+        status: 'available'
+    });
+
+});
+
+router.get('/product2', (req, res) =>{
+    res.send({
+        name: 'watch',
+        type: 'quartz',
+        brand: 'casio',
+        price: '1000000',
+        status: 'available'
+    });
+
+});
+
+router.get('/product3', (req, res) =>{
+    res.send({
+        name: 'sarung',
+        type: 'batik',
+        brand: 'atlas',
+        price: '200000',
+        status: 'available'
+    });
+
+});
+
 router.get('/product/:id', (req, res) => {
     res.json({
         id: req.params.id
